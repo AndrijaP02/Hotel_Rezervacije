@@ -53,17 +53,17 @@ public class rateHotel extends HttpServlet {
         Connection con = DriverManager.getConnection(url, user, password);
         PreparedStatement pstmt = null;
 
-        // Provera da li postoji korisnik sa datim korisničkim imenom
+        
         PreparedStatement checkUserStmt = con.prepareStatement("SELECT * FROM client WHERE username = ?");
         checkUserStmt.setString(1, userName);
         ResultSet userResult = checkUserStmt.executeQuery();
         
         if (!userResult.next()) {
-            // Korisnik sa datim korisničkim imenom ne postoji
+            
             out.println("<meta http-equiv='refresh' content='3;URL=index.jsp'>");
             out.println("<h1 style='color:black;'>Client with entered username does not exist!</h1>");
         } else {
-            // Korisnik postoji, nastavite sa unosom ocene hotela
+           
             pstmt = con.prepareStatement("INSERT INTO rate (hotelId, userName, starsNumber, comment) VALUES (?, ?, ?, ?)");
             pstmt.setInt(1, hotelId);
             pstmt.setString(2, userName);

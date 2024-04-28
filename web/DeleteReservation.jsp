@@ -10,11 +10,11 @@
     </head>
     <body>
         <%
-            // Dobijanje parametara iz zahteva
+            
             int roomId = Integer.parseInt(request.getParameter("roomId"));
             String username = request.getParameter("username");
 
-            // Konekcija sa bazom podataka
+            
             Connection con = null;
             try {
                 Class.forName("com.mysql.jdbc.Driver");
@@ -23,16 +23,16 @@
                 String password = "";
                 con = DriverManager.getConnection(url, user, password);
 
-                // SQL upit za brisanje rezervacije
+                
                 String deleteQuery = "DELETE FROM reservation WHERE roomId = ? AND username = ?";
                 PreparedStatement preparedStatement = con.prepareStatement(deleteQuery);
                 preparedStatement.setInt(1, roomId);
                 preparedStatement.setString(2, username);
 
-                // Izvršavanje upita za brisanje
+                
                 int rowsAffected = preparedStatement.executeUpdate();
 
-                // Provera da li je rezervacija uspešno obrisana
+                
                 if (rowsAffected > 0) {
 
                     out.println("<meta http-equiv='refresh' content='3;URL=admin.html'>");

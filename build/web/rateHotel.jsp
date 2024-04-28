@@ -12,7 +12,7 @@
                 margin: 0;
                 padding: 0;
                 display: flex;
-                flex-direction: column; /* Postavite flex direction na kolonu */
+                flex-direction: column; /* Postavi flex direction na kolonu */
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
@@ -43,10 +43,10 @@
             form input[type="submit"] {
                 display: block;
                 margin: 10px 0;
-                margin: 0 auto;/* Puni širina unutar forme */
+                margin: 0 auto;/* Puna širina unutar forme */
                 border-radius: 5px;
                 border: 2px solid #a98dff;
-                padding: 5px; /* Dodajte odgovarajući padding za bolji izgled */
+                padding: 5px; /* Dodaj odgovarajući padding za bolji izgled */
             }
 
             form input[type="submit"] {

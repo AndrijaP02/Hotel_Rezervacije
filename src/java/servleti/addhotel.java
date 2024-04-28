@@ -90,7 +90,7 @@ out.println("</html>");
 }
     }
     public static int generateNextHotelId() {
-    int nextHotelId = 1; // Počnite od vrednosti 1
+    int nextHotelId = 1; 
 
     String url = "jdbc:mysql://localhost:3306/hotel2";
     String user = "root";
@@ -104,7 +104,7 @@ out.println("</html>");
         while (resultSet.next()) {
             int currentId = resultSet.getInt("hotelID");
             if (currentId >= nextHotelId) {
-                // Ako trenutni ID veći ili jednak sledećem ID-u, povećajte sledeći ID za 1
+                
                 nextHotelId = currentId + 1;
             }
         }

@@ -21,32 +21,32 @@
                 background-color: #d0c2fa;
                 overflow: hidden;
                 display: flex;
-                flex-wrap: wrap; /* Omogućava prelamanje elemenata na više redova */
+                flex-wrap: wrap; 
                 justify-content: center;
                 gap: 10px;
                 border-radius: 10px;
-                flex-direction: row; /* Postavite da se elementi rasporede horizontalno */
+                flex-direction: row; 
             }
 
-            /* Postavite početnu širinu linkova */
+            /* Postavi početnu širinu linkova */
             .topnav a {
-                flex-basis: auto; /* Postavite širinu na automatsko kako bi se linkovi pravilno rasporedili */
+                flex-basis: auto; 
                 color: #5a4489;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
                 font-size: 17px;
-                box-sizing: border-box; /* Uklonite dodatni prostor uzrokovan paddingom */
+                box-sizing: border-box; /* Ukloni dodatni prostor uzrokovan paddingom */
             }
 
-            /* Promenite boju linkova na hover */
+            /* Promeni boju linkova na hover */
             .topnav a:hover {
                 background-color: #ac92f5;
                 color: white;
                 border-radius: 5px;
             }
 
-            /* Dodajte boju trenutnom linku */
+            /* Dodaj boju trenutnom linku */
             .topnav a.active {
                 background-color: #ac92f5;
                 color: white;
@@ -166,10 +166,10 @@
 
             String username = request.getParameter("username");
             if (username == null || username.isEmpty()) {
-                // Ako korisnik nije unio korisničko ime, prikažite poruku
+                // Ako korisnik nije uneo korisničko ime, prikažite poruku
                 out.println("<meta http-equiv='refresh' content='3;URL=admin.html'>");
                 out.println("<h1 style='color:black;'>Molimo unesite korisničko ime!</h1>");
-                return; // Prekida izvršavanje metode
+                return; 
             }
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/hotel2";

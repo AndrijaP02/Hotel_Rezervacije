@@ -55,7 +55,7 @@ public class updateroom extends HttpServlet {
             String user = "root";
             String password = "";
 
-            // Povezivanje na bazu podataka
+            
             con = DriverManager.getConnection(url, user, password);
 
             // Dobijanje slike iz zahteva
@@ -63,7 +63,7 @@ public class updateroom extends HttpServlet {
             String fileName = extractFileName(filePart);
             InputStream imageInputStream = filePart.getInputStream();
 
-            // Priprema SQL upita za ažuriranje
+            
             String sql = "UPDATE room SET adultsNum=?, childrenNum=?, price=?, image=? WHERE roomId=?";
             pstmt = con.prepareStatement(sql);
             pstmt.setInt(1, adultsNum);
@@ -72,7 +72,7 @@ public class updateroom extends HttpServlet {
             pstmt.setBinaryStream(4, imageInputStream);
             pstmt.setInt(5, roomId);
 
-            // Izvršavanje SQL upita
+            
             int count = pstmt.executeUpdate();
 
             if (count > 0) {
@@ -99,7 +99,7 @@ public class updateroom extends HttpServlet {
         }
     }
 
-// Metoda za dobijanje imena datoteke iz Part objekta
+
 private String extractFileName(Part part) {
         String contentDisposition = part.getHeader("content-disposition");
         String[] items = contentDisposition.split(";");

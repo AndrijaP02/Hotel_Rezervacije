@@ -72,7 +72,7 @@ public class signup extends HttpServlet {
             
             String successMessage = "Uspešno ste se registrovali. Bićete preusmereni na stranicu za prijavu za 3 sekunde.";
 
-// Postavite odgovarajući odgovor na stranici
+
 out.println("<html>");
 out.println("<head>");
 out.println("<title>Registracija uspešna</title>");
@@ -83,11 +83,11 @@ out.println("<p>" + successMessage + "</p>");
 out.println("</body>");
 out.println("</html>");
 
-// Nakon toga, koristite JavaScript za automatsko preusmeravanje
+
 out.println("<script type=\"text/javascript\">");
 out.println("setTimeout(function () {");
-out.println("    window.location.href = \"Login.html\";"); // Preusmeravanje na stranicu za prijavu
-out.println("}, 3000);"); // Vreme u milisekundama (3 sekunde)
+out.println("    window.location.href = \"Login.html\";"); 
+out.println("}, 3000);"); 
 out.println("</script>");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(signup.class.getName()).log(Level.SEVERE, null, ex);

@@ -81,24 +81,24 @@
             </form>
             <div id="errorMessage" style="color: red; display: none;"></div>
             <script>
-                // Dodajte ovu liniju ispod definicije searchForm-a
+                
                 var errorMessage = document.getElementById("errorMessage");
 
-// Postavite event listener za submit formulara
+
                 searchForm.addEventListener("submit", function (event) {
-                    // Dobijte unete vrednosti
+                    
                     var goingValue = document.getElementById("going").value;
                     var checkinValue = document.getElementById("Checkin").value;
                     var checkoutValue = document.getElementById("Checkout").value;
 
-                    // Proverite da li su unete vrednosti prazne
+                    
                     if (goingValue.trim() === "" || checkinValue.trim() === "" || checkoutValue.trim() === "") {
-                        // Ako su unete vrednosti prazne, sprečite podnošenje forme
+                        
                         event.preventDefault();
-                        // Prikazivanje poruke korisniku
+                       
                         errorMessage.textContent = "Morate uneti sve podatke za pretragu.";
                         errorMessage.style.display = "block"; // Prikazi poruku
-                        // Postavi tajmer za sakrivanje poruke nakon 5 sekundi
+                        
                         setTimeout(function () {
                             errorMessage.style.display = "none"; // Sakrij poruku
                         }, 5000); // 5000 milisekundi (5 sekundi)

@@ -52,10 +52,10 @@ public class addroom extends HttpServlet {
         Connection con = DriverManager.getConnection(url, user, password);
         PreparedStatement pstmt = null;
 
-        // Dobijanje datoteke iz zahteva
+        
         Part filePart = request.getPart("photo");
 
-        // Pretvaranje Part objekta u bajt niz
+        
         InputStream fileContent = filePart.getInputStream();
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         byte[] buffer = new byte[8192];
@@ -64,10 +64,10 @@ public class addroom extends HttpServlet {
             byteArrayOutputStream.write(buffer, 0, bytesRead);
         }
 
-        // Konvertovanje bajt niza u byte[]
+       
         byte[] imageBytes = byteArrayOutputStream.toByteArray();
 
-        // Priprema SQL upita za unos podataka u tabelu
+        
         pstmt = con.prepareStatement("INSERT INTO room (adultsNum, childrenNum, hotelId, price, image) VALUES (?, ?, ?, ?, ?);");
         pstmt.setInt(1, adultsNum);
         pstmt.setInt(2, childrenNum);

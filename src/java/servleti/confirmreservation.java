@@ -72,8 +72,8 @@ public class confirmreservation extends HttpServlet {
                 Statement stat4 = con.createStatement();
                 stat4.executeUpdate("UPDATE client SET balance = '" + clientBalance + "' WHERE userName = '" + userName + "'");
                 stat4.executeUpdate("UPDATE reservation SET confirm = '1' WHERE username = '" + userName + "' AND roomId = '" + roomId + "'");
-                // Ostatak koda za slanje emaila i redirekciju
-                // ...
+             
+                
                 out.println("<meta http-equiv='refresh' content='3;URL=admin.html'>");
                 out.println("<h1 style='color:black;'>Reservation Confirmed!</h1>");
             } else {

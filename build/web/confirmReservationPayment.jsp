@@ -31,12 +31,12 @@
                 border: 2px solid #a98dff;
                 border-radius: 5px;
                 padding: 5px;
-            } /* Centrirajte formu horizontalno */
+            } /* Centriraj formu horizontalno */
 
             form {
-                width: 50%; /* Postavite željenu širinu forme */
-                margin: 0 auto; /* Centrirajte formu horizontalno */
-                padding: 20px; /* Dodajte malo prostora oko forme */
+                width: 50%; 
+                margin: 0 auto; 
+                padding: 20px; 
             }
 
             body{
@@ -44,18 +44,18 @@
                 background-color: #ebe5fd;
                 margin: 0;
                 padding: 0;
-                display: flex; /* Koristi flex model za horizontalno poravnanje */
-                flex-wrap: wrap; /* Omogućava wrap elementima unutar .topnav */
-                justify-content: center; /* Centriraj sadržaj horizontalno */
+                display: flex; 
+                flex-wrap: wrap; 
+                justify-content: center; 
             }
 
             .topnav {
                 background-color: #d0c2fa;
                 overflow: hidden;
-                display: flex; /* Koristi flex model za horizontalno poravnanje linkova */
-                flex-wrap: wrap; /* Omogućava wrap linkovima unutar .topnav */
-                justify-content: center; /* Centriraj linkove horizontalno */
-                gap: 10px; /* Dodaj razmak između linkova */
+                display: flex; 
+                flex-wrap: wrap; 
+                justify-content: center; 
+                gap: 10px; 
                 border-radius: 10px;
             }
 

@@ -82,7 +82,7 @@ public class loginServlete extends HttpServlet {
         }
 
         try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel2", "root", "");
-                // Kreirajte upit za korisnika sa datim korisničkim imenom
+                
                 PreparedStatement preparedStatement = con.prepareStatement("select * from client where userName = ?")) {
 
             preparedStatement.setString(1, username);
@@ -91,7 +91,7 @@ public class loginServlete extends HttpServlet {
             if (rs.next()) {
                 String storedHashedPassword = rs.getString("password");
 
-                // Hashirajte unetu lozinku i uporedite sa lozinkom iz baze
+              
                 String hashedPassword = hashPassword(rawPassword);
 
                 if (storedHashedPassword.equals(hashedPassword)) {
@@ -103,16 +103,16 @@ public class loginServlete extends HttpServlet {
                         response.sendRedirect("index.jsp");
                     }
                 } else {
-                    // Lozinke se ne podudaraju, preusmerite korisnika na stranicu za prijavu
+                    // Lozinke se ne podudaraju, preusmeri korisnika na stranicu za prijavu
                     response.sendRedirect("Login.html");
                 }
             } else {
-                // Korisnik sa datim korisničkim imenom nije pronađen, preusmerite korisnika na stranicu za prijavu
+                // Korisnik sa datim korisničkim imenom nije pronađen, preusmeri korisnika na stranicu za prijavu
                 response.sendRedirect("Login.html");
             }
 
         } catch (SQLException e) {
-            // Handle SQL exception
+            
         }
 
     }
@@ -121,7 +121,7 @@ public class loginServlete extends HttpServlet {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
             byte[] hashInBytes = md.digest(password.getBytes("UTF-8"));
 
-            // Konvertuj bajtove u heksadecimalni format
+            
             StringBuilder sb = new StringBuilder();
             for (byte b : hashInBytes) {
                 sb.append(String.format("%02x", b));

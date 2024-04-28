@@ -48,16 +48,16 @@ public class uploadPhoto extends HttpServlet {
         PreparedStatement pstmt = null;
         int hotelId = Integer.parseInt(request.getParameter("hotelId"));
 
-        // Dobijanje datoteke iz zahtjeva
+       
         Part filePart = request.getPart("photo");
 
-        // Dobijanje imena datoteke
+       
         String fileName = getFileName(filePart);
 
-        // Učitavanje sadržaja slike u bajt niz
+       
         InputStream imageInputStream = filePart.getInputStream();
 
-        // Priprema SQL upita za ažuriranje baze podataka
+       
         pstmt = con.prepareStatement("update hotel set image=? where hotelId=?");
         pstmt.setBinaryStream(1, imageInputStream);
         pstmt.setInt(2, hotelId);
@@ -75,7 +75,7 @@ public class uploadPhoto extends HttpServlet {
     }
 }
 
-// Metoda za dobijanje imena datoteke iz Part objekta
+
 private String getFileName(Part part) {
     String contentDisp = part.getHeader("content-disposition");
     String[] tokens = contentDisp.split(";");

@@ -57,7 +57,7 @@ public class cancelReservation extends HttpServlet {
             String password = "";
             Connection con = DriverManager.getConnection(url, user, password);
             if (username == null || username.isEmpty()) {
-                // Ako korisnik nije unio korisničko ime, prikažite poruku
+                // Ako korisnik nije unio korisničko ime, prikaži poruku
                 out.println("<meta http-equiv='refresh' content='3;URL=admin.html'>");
                 out.println("<h1 style='color:black;'>Molimo unesite korisničko ime!</h1>");
                 return; // Prekida izvršavanje metode
