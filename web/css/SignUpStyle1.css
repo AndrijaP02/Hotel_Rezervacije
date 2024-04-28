@@ -1,0 +1,112 @@
+body {
+    padding:0px;
+    margin: 0px;
+    background-color: #ebe5fd;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+    width: 400px;
+    margin: 60px auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.login-header {
+    background:#ac92f5;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #555555;
+    border-radius: 15px;
+
+}
+
+.login-container {
+    background: #d0c2fa;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+    padding: 12px;
+}
+
+.login input {  
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+    border-radius: 5px;
+    border: 2px solid #ac92f5;
+
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+    background: #fff;
+    border: 2px solid #ac92f5;
+    color: #555;
+}
+
+.login input[type="submit"]:hover {
+    color: white;
+    background-color: #ac92f5;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+    border-color: #888;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d0c2fa;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    margin-left: 10px;
+    display: block;
+    color: #555555;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #9e7ff4;
+    color:white;
+    border-radius: 5px;
+}
+#slika img{
+    width:30px;
+    height: 30px;
+    border-radius: 10px;
+}
+#slika h5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+

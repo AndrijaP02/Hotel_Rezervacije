@@ -1,0 +1,27 @@
+body{
+    background: #CCCCCC;
+}
+.profile-box{
+    width: 600px;
+    height: 600px;
+    background-color: #F1F1F1; 
+   margin-left: 450px;
+   margin-top: 50px;
+
+}
+
+.img{
+    width: 100px;
+    margin-left:250px;
+    margin-top: 40px;
+}
+
+.info{
+   padding: 40px;
+}
+
+.btn-update{
+    width: 100px;
+    margin-left: 220px;
+    padding: 3px;
+}

@@ -1,0 +1,135 @@
+.container .row .col-md-12 .section-title { 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+.container .row .col-md-12 .section-title span {
+    color: #9999ff
+}
+.section-title > p {
+    color: #4a4a4a;
+    line-height: 18px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.our-room-show .single-room {
+    background: #dddcff none repeat scroll 0 0;
+    margin: 0 0;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+.our-room-show .single-room {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+        border-radius: 15px;
+
+}
+.our-room-show .single-room .room-img {
+    width: 390px;
+    height: 260px;
+    overflow: hidden; /* Dodaj overflow da biste ograničili prikazivanje slika unutar kontejnera */
+    position: relative; /* Postavi relativno pozicioniranje da biste omogućili centriranje slike */
+    margin: 0 auto;
+    margin-top: 20px;
+        box-shadow: 1px 1px 8px #9999ff;
+}
+
+.our-room-show .single-room .room-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Postavi da slika popuni kontejner bez obzira na odnos širine i visine */
+    position: absolute; /* Postavi apsolutno pozicioniranje da biste centrirali sliku unutar kontejnera */
+    top: 0;
+    left: 0;
+}
+#about .section-header h2{
+    text-align: center;
+    padding-top: 15px;
+    color: #9999ff;
+    text-shadow: 3px 3px 3px #9999ff;
+}
+#about .section-header p{
+    text-align: center;
+}
+
+#contact .container {
+    background-color: #ccccff;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#contact .container >.row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#contact .container >.row h4 {
+    color: #9999ff;
+}
+
+.single-room .room-desc {
+    padding: 15px 25px 25px 38px;
+    position: relative;
+    text-align: left;
+    widows: 100%;
+    height: 100%;
+    color: black;
+}
+
+.carousel-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.carousel-list .col-md-4 {
+    width: calc(30% - 20px); /* 20px predstavlja unutarnji razmak između elemenata */
+    margin-right: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 2px #9999ff;
+    border: 2px solid #9999ff;
+    background: #dddcff none repeat scroll 0 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #9999ff;
+    border-radius: 15px;
+}
+
+/* Poslednji element u redu nema margin desno */
+.carousel-list .col-md-4:last-child {
+    margin-right: 0;
+}
+
+/* Ako želite da elementi budu centrirani u redu */
+.carousel-list .col-md-4 {
+    flex: 1; /* Da bi se svi elementi proširili na istu širinu */
+}
+
+.carousel-list .col-md-4:hover {
+    transform: scale(0.95); 
+}
+.single-room .room-desc .rate-button a{
+    color: black;
+    border: 2px solid #9999ff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.single-room .room-desc .rate-button a:hover{
+    color: white;
+    background-color: #9999ff;
+    border: 2px solid #9999ff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.single-room .room-desc span{
+    font-style: italic;
+    padding-left: 20px;
+}

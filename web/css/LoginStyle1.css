@@ -1,0 +1,74 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ebe5fd;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Signin {
+    width: 600px;
+    margin: 150px auto;
+    font-size: 16px;
+    text-align: center;
+}
+.Signin-header,
+.login p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Signin-header {
+    background:#ac92f5;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #555555;
+    border-radius: 15px;
+}
+
+.Signin-container {
+    background: #d0c2fa;
+    padding: 12px;
+    border-radius: 15px;
+}
+.Signin-container input{
+    width: 170px;
+    padding:10px;
+    border-radius: 5px;
+    border: 2px solid #ac92f5;
+}
+.btn{
+    padding:10px;
+}
+.btn:hover{
+    color: white;
+    background-color: #ac92f5;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d0c2fa;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    margin-left: 10px;
+    display: block;
+    color: #555555;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #9e7ff4;
+    color:white;
+    border-radius: 5px;
+}

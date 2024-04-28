@@ -1,0 +1,72 @@
+body {
+    padding: 0;
+    background-color: white;
+    text-align: center;
+}
+
+.wrapper {
+    background: #bebcff;
+    margin: auto;
+    position: relative;
+    width: 300px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 20px 5px #9b99de;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    text-align: left; /* Sada je poravnanje input polja na levoj strani */
+}
+
+.form label {
+    display: block;
+    text-align: right;
+    margin: 0 auto;/* Poravnanje labela po sredini i na desnoj strani */
+    margin-bottom: 5px;
+    margin-top: 5px;/* Dodajte malo razmaka ispod labela */
+}
+
+.form input {
+    padding: 4px;
+    width: 158px;
+    border-radius: 5px;
+    border: 2px solid #8c75d6;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    text-align: left; /* Poravnanje teksta unutar input polja na levoj strani */
+}
+
+.form select {
+    padding: 5px;
+    width: 160px;
+    border-radius: 5px;
+    border: 2px solid #8c75d6;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    text-align: left; /* Poravnanje teksta unutar select polja na levoj strani */
+}
+
+.form input[type="submit"] {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.form input[type="submit"]:hover {
+    background-color: #8c75d6;
+    color: white;
+}

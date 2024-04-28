@@ -1,0 +1,135 @@
+
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: white;
+}
+*{
+    box-sizing: border-box;
+}
+
+#main{
+    width: 100%;
+    background-color: #ffffff;
+    display: inline-block;
+
+}
+#main h1
+{
+    text-align: center;
+    color: #a082f4;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px #a082f4;
+}
+#main ul{
+    list-style: none;
+}
+#main a{
+    text-decoration: none;
+}
+#main ul li
+{
+    margin: 0px;
+    display: flex;
+}
+.showcase-box{
+    width:430px;
+    height: 390px;
+    box-shadow: 0px 0px 30px #a082f4;
+    border-radius: 10px;
+    margin:0px 20px 10px 20px;
+    overflow: hidden;
+}
+.showcase-box img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.showcase-heading{
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    text-shadow: 2px 2px 5px d0c2fa;
+}
+.cs-hidden{
+    overflow: visible !important;
+}
+.item-a{
+    padding: 10px;
+}
+#latest{
+    border-top: 1px solid rgba(53,53,53,0.1);
+}
+.latest-heading{
+    margin: 30px 30px 0px 30px;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.latest-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    margin: 20px 10px;
+    border-radius: 10px;
+    overflow:hidden;
+    width:200px;
+    background-color: #ffffff;
+}
+.latest-b-img{
+    width:100%;
+    height: 270px;
+}
+.latest-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.latest-b-text strong{
+    color: #af97f6;
+    margin: 0px;
+}
+.latest-b-text{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-align: left;
+    flex-direction: column;
+    margin: 10px;
+}
+.latest-b-text p{
+    color:#979797;
+    margin: 0px;
+}
+
+.latest-b-text button
+{
+    background-color: #a082f4;
+    border: none;
+    padding: 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    color: white;
+}
+.latest-b-text button:hover
+{
+    background-color: #dacefa;
+    color: #a082f4;
+}
+.latest-b-text button a:hover
+{
+   color: #a082f4;
+}
+.latest-b-text button a
+{
+   color:white;
+}
